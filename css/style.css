@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+/*           Generales           */
+
+/*           Header           */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: auto;
+  overflow-x: hidden;
+}
+
+ul {
+  margin-bottom: 0 !important;
+  padding-left: 0 !important ;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: rgba(153, 161, 132, 0.664) !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #afb1b3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-linear-gradient(top, #09fbff, #4ca06d);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 225, 0.5),
+    inset 1px 0 0 rgba(255, 255, 255, 0.4),
+    inset 0 1px 2px rgba(255, 255, 255, 0.3);
+
+  border: thin solid #232c34;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-linear-gradient(top, #4ca06d, #5aafb0);
+}
+
+header {
+  background-color: #93d370;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1;
+}
+
+header .logo {
+  height: 50px;
+  width: 65px;
+}
+
+header a {
+  cursor: pointer;
+}
+
+header .carrito-img {
+  height: 24px;
+  width: 24px;
+}
+
+@media (max-width: 800px) {
+  header .carrito-img {
+    display: none;
+  }
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin: 5px;
+}
+
+header nav ul li a {
+  color: rgb(32, 32, 18);
+  transition: 0.5s;
+}
+
+header nav ul li a:hover {
+  color: #b6826d;
+}
+
+/* Responsive header */
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 1.2rem;
+  z-index: 9;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    z-index: -1;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/*           Footer           */
+
+.footer {
+  background: #000 !important;
+  padding: 10px 0px !important;
+  font-family: "Play", sans-serif !important;
+  text-align: center !important;
+  width: 100% !important;
+  bottom: 0 !important;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+  margin: 1% 0% !important;
+  padding: 0.6% 0% !important;
+  color: gray !important;
+  font-size: 0.8em !important;
+}
+
+.footer .row a {
+  text-decoration: none !important;
+  color: gray !important;
+  transition: 0.5s !important;
+  height: auto;
+  width: auto;
+}
+
+.footer .row a:hover {
+  color: #fff !important;
+}
+
+.footer .row ul {
+  width: 100% !important;
+}
+
+.footer .row ul li {
+  display: inline-block !important;
+  margin: 0px 30px !important;
+}
+
+.footer .row a i {
+  font-size: 2em !important;
+  margin: 0% 1% !important;
+}
+
+/*           Main Index           */
+
+main .fondo {
+  height: 91vh;
+  width: 100%;
+  z-index: 0;
+}
+main .section-index {
+  display: flex;
+  height: 90.6vh;
+  align-items: center;
+  justify-content: left;
+  background: linear-gradient(to right, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),
+    url(/img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+main section .letras-index {
+  display: inline-block;
+  margin-left: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main section .letras-index p {
+  font-size: 14px;
+}
+
+main section .letras-index h1 {
+  font-size: 50px;
+  font-style: italic;
+}
+
+main section .letras-index span {
+  font-size: 14px;
+}
+
+main section .letras-index a {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  width: 9rem;
+  background-color: rgb(60, 255, 0);
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+main section .letras-index a:hover {
+  background-color: rgb(78, 161, 53);
+}
+
+/*           Letras En General           */
+
+main section .letras {
+  display: inline-block;
+  margin-left: 5rem;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+main section .letras p {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+main section .letras h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-style: italic;
+}
+
+main section .letras span {
+  font-size: 14px;
+}
+
+main section .letras a {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  width: 9rem;
+  background-color: rgb(60, 255, 0);
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/*           Main Menu           */
+
+main .section-menu,
+.cards-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+
+/*           Main Menu Letras           */
+
+main section .letras {
+  display: inline-block;
+  margin-left: 5rem;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+main section .letras p {
+  font-size: 14px;
+}
+
+main section .letras h1 {
+  font-size: 50px;
+  font-style: italic;
+}
+
+main section .letras span {
+  font-size: 14px;
+}
+
+main section .letras a {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  width: 9rem;
+  background-color: rgb(60, 255, 0);
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/*           Main Menu Cards           */
+
+main .cards-section {
+  display: grid;
+  gap: 6.25em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+
+main section .card {
+  width: 18rem;
+  height: 350px;
+  background-color: #e3cff3;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif !important  ;
+  transition: 0.5s;
+}
+
+main section .card:hover {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+
+main .cards .letras-cards {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+main .cards h3 {
+  display: inline-flex;
+  font-size: 1rem;
+}
+
+main .cards .precio {
+  display: flex;
+  font-style: italic;
+}
+
+main .cards .button-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c88d9;
+  width: 5rem;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 17px;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+main .cards .button-card:hover {
+  background-color: #000;
+}
+
+main .cards .button-card a {
+  color: #fff;
+  font-size: 14px;
+}
+
+/*           Main Sucursales           */
+
+main .section-sucursales,
+.mapas-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+
+/*           Main Sucursales Letras           */
+
+main section .letras {
+  display: inline-block;
+  margin-left: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main section .letras p {
+  font-size: 14px;
+}
+
+main section .letras h1 {
+  font-size: 50px;
+  font-style: italic;
+}
+
+main section .letras span {
+  font-size: 14px;
+}
+
+main section .letras a {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  width: 9rem;
+  background-color: rgb(60, 255, 0);
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/*           Main Sucursales Mapas          */
+
+main section .mapas-section {
+  display: flex;
+}
+
+main section .section-sucursales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+
+main section .mapas-contenedor {
+  display: flex;
+}
+
+main section .mapa1-contenedor {
+  width: 450px;
+  height: 300px;
+  border: 1px solid black;
+  margin-right: 25px;
+}
+
+main section .mapa2-contenedor {
+  width: 450px;
+  height: 300px;
+  border: 1px solid black;
+  margin-left: 25px;
+}
+
+/*           Main Delivery           */
+
+main .section-delivery,
+.mapas-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+
+main section .mapa1-contenedor-delivery {
+  width: 300%;
+  height: 400px;
+  border: 1px solid black;
+  margin-right: 25px;
+  background-color: #000;
+}
+
+/*           Main Nosotros           */
+
+main .main-nosotros {
+  display: grid;
+}
+
+main .apartado1,
+.apartado2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main .contenedor-h1 h1 {
+  padding: 25px;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+/*           Apartados Nosotros           */
+
+main .apartado1,
+.apartado2 {
+  gap: 250px;
+}
+
+main .apartado1 img {
+  width: 100%;
+  padding: 15px;
+}
+
+main .apartado2 img {
+  width: 100%;
+  padding: 15px;
+}
+
+main section .texto-apartado1 {
+  margin-right: 10px;
+  text-align: center;
+}
+
+main section .texto-apartado1 p {
+  margin-top: 30px;
+}
+
+main section .texto-apartado2 {
+  margin-left: 10px;
+  text-align: center;
+}
+
+main section .texto-apartado2 p {
+  margin-top: 30px;
+}
