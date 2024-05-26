@@ -1,0 +1,38 @@
+.footer {
+  background: #000 !important;
+  padding: 10px 0px !important;
+  font-family: "Play", sans-serif !important;
+  text-align: center !important;
+  width: 100% !important;
+  bottom: 0 !important;
+  .row {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    margin: 1% 0% !important;
+    padding: 0.6% 0% !important;
+    color: gray !important;
+    font-size: 0.8em !important;
+    a {
+      text-decoration: none !important;
+      color: gray !important;
+      transition: .5s !important;
+      height: auto;
+      width: auto;
+      :hover {
+        color: #fff !important;
+      }
+      i {
+        font-size: 2em !important;
+        margin: 0% 1% !important;
+      }
+    }
+    ul {
+      width: 100% !important;
+      li {
+        display: inline-block !important;
+        margin: 0px 30px !important;
+      }
+    }
+  }
+}

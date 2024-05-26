@@ -191,12 +191,6 @@ header nav ul li a:hover {
 }
 
 /*           Main Index           */
-
-main .fondo {
-  height: 91vh;
-  width: 100%;
-  z-index: 0;
-}
 main .section-index {
   display: flex;
   height: 90.6vh;
@@ -292,7 +286,7 @@ main .section-menu,
 }
 
 /*           Main Menu Letras           */
-
+/* 
 main section .letras {
   display: inline-block;
   margin-left: 5rem;
@@ -322,7 +316,7 @@ main section .letras a {
   text-decoration: none;
   padding: 15px;
   border-radius: 5px;
-}
+} */
 
 /*           Main Menu Cards           */
 
@@ -376,15 +370,6 @@ main .cards .button-card {
   margin-left: 40px;
   cursor: pointer;
   transition: 0.5s;
-}
-
-main .cards .button-card:hover {
-  background-color: #000;
-}
-
-main .cards .button-card a {
-  color: #fff;
-  font-size: 14px;
 }
 
 /*           Main Sucursales           */
