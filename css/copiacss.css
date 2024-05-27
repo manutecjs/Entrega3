@@ -402,19 +402,6 @@ main section .letras h1 {
 main section .letras span {
   font-size: 14px;
 }
-
-main section .letras a {
-  display: block;
-  text-align: center;
-  margin-top: 5px;
-  width: 9rem;
-  background-color: rgb(60, 255, 0);
-  color: black;
-  text-decoration: none;
-  padding: 15px;
-  border-radius: 5px;
-}
-
 /*           Main Sucursales Mapas          */
 
 main section .mapas-section {
