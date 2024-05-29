@@ -1,7 +1,7 @@
 .footer {
-  background: #000 !important;
+  background: $letras !important;
   padding: 10px 0px !important;
-  font-family: "Play", sans-serif !important;
+  font-family: $fuente-general !important;
   text-align: center !important;
   width: 100% !important;
   bottom: 0 !important;
@@ -11,11 +11,11 @@
     width: 100% !important;
     margin: 1% 0% !important;
     padding: 0.6% 0% !important;
-    color: gray !important;
+    color: $gris !important;
     font-size: 0.8em !important;
     a {
       text-decoration: none !important;
-      color: gray !important;
+      color: $gris !important;
       transition: 0.5s !important;
       height: auto;
       width: auto;

@@ -1,8 +1,7 @@
 main .section-index {
   display: flex;
   height: 90.6vh;
-  align-items: center;
-  justify-content: left;
+  @include justify-align(left, center);
   background: linear-gradient(to right, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),
     url(/img/fondo.jpg);
   background-size: cover;
@@ -10,8 +9,8 @@ main .section-index {
   .letras-index {
     display: inline-block;
     margin-left: 5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    font-family: $fuente-general;
+    color: $letras;
     overflow: hidden;
     p {
       font-size: 1rem;
@@ -26,8 +25,7 @@ main .section-index {
     }
     a {
       display: block;
-      font-family: Arial, Helvetica, sans-serif;
-      color: black;
+      color: $letras;
       font-size: 1.1rem;
       text-align: center;
       margin-top: 5px;

@@ -1,9 +1,6 @@
 main .section-sucursales,
 .mapas-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 35px;
+  @extend .section-menu;
   .mapas-contenedor {
     display: flex;
     gap: 10px;
@@ -15,34 +12,21 @@ main .section-sucursales,
         overflow: hidden;
         width: 100%;
         padding-top: 56.25%;
-        iframe {
+        .iframe {
           position: absolute;
           top: 0;
           left: 0;
           bottom: 0;
           right: 0;
-          width: 100%;
-          height: 100%;
+          @include sizes(100%, 100%);
         }
       }
     }
     .mapa2-contenedor {
       width: 700px;
-
       .mapa2 {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        padding-top: 56.25%;
-        iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          width: 100%;
-          height: 100%;
-        }
+        @extend .mapa1;
+        @extend .iframe; // No se por que no se coloca igual que el otro Iframe, ya probe con todo... Si no utilizo el extend funciona pero la idea es poder aplicarlo aca tambien. Ayuda!!!!!
       }
     }
   }

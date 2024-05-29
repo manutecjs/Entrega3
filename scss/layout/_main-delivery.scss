@@ -1,9 +1,6 @@
 main .section-delivery,
 .mapas-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 35px;
+  @extend .section-menu;
   .mapas-contenedor {
     width: 700px;
     border: 2px solid black;
@@ -18,8 +15,7 @@ main .section-delivery,
         left: 0;
         bottom: 0;
         right: 0;
-        width: 100%;
-        height: 100%;
+        @include sizes (100%, 100%);
       }
     }
   }

@@ -21,7 +21,7 @@ a {
 // Body
 
 body {
-  background-color: rgba(153, 161, 132, 0.664) !important;
+  background-color: $bg-principal !important;
 }
 
 // Scroll
@@ -50,7 +50,7 @@ body {
 main section .letras {
   display: inline-block;
   margin-left: 5rem;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: $fuente-general !important;
   p {
     display: flex;
     justify-content: center;
@@ -68,15 +68,21 @@ main section .letras {
     font-size: 1rem;
     color: black;
   }
-  a {
-    display: block;
-    text-align: center;
-    margin-top: 5px;
-    width: 9rem;
-    background-color: rgb(60, 255, 0);
-    color: black;
-    text-decoration: none;
-    padding: 15px;
-    border-radius: 5px;
-  }
+}
+
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin d-flex($flex, $justify-content, $align-items, $padding) {
+  display: $flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  padding: $padding;
+}
+
+@mixin justify-align($justify-content, $align-item){
+  justify-content: $justify-content;
+  align-items: $align-item;
 }

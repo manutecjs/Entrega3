@@ -1,3 +1,87 @@
+@media (max-width: 800px) {
+  header .carrito-img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    z-index: -1;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: auto;
+  overflow-x: hidden;
+}
+
+ul {
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: #99A184 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #afb1b3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-linear-gradient(top, #09fbff, #4ca06d);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 225, 0.5), inset 1px 0 0 rgba(255, 255, 255, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+  border: thin solid #232c34;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-linear-gradient(top, #4ca06d, #5aafb0);
+}
+
+main section .letras {
+  display: inline-block;
+  margin-left: 5rem;
+  font-family: "Arial", "Helvetica" !important;
+}
+main section .letras p {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  color: black;
+}
+main section .letras h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  font-style: italic;
+  color: black;
+}
+main section .letras span {
+  font-size: 1rem;
+  color: black;
+}
+
 header {
   background-color: #93d370;
   position: sticky;
@@ -7,19 +91,19 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid grey;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica";
   z-index: 1;
 }
 header .logo {
-  height: 50px;
   width: 65px;
+  height: 50px;
 }
 header a {
   cursor: pointer;
 }
 header .carrito-img {
-  height: 24px;
   width: 24px;
+  height: 24px;
 }
 header nav ul {
   display: flex;
@@ -46,8 +130,8 @@ header nav ul li :hover {
   backdrop-filter: blur(12px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   flex-direction: column;
-  align-items: flex-start;
   justify-content: flex-start;
+  align-items: flex-start;
   gap: 10px;
   font-size: 1.2rem;
   z-index: 9;
@@ -86,9 +170,9 @@ header nav ul li :hover {
   }
 }
 .footer {
-  background: #000 !important;
+  background: black !important;
   padding: 10px 0px !important;
-  font-family: "Play", sans-serif !important;
+  font-family: "Arial", "Helvetica" !important;
   text-align: center !important;
   width: 100% !important;
   bottom: 0 !important;
@@ -99,12 +183,12 @@ header nav ul li :hover {
   width: 100% !important;
   margin: 1% 0% !important;
   padding: 0.6% 0% !important;
-  color: gray !important;
+  color: grey !important;
   font-size: 0.8em !important;
 }
 .footer .row a {
   text-decoration: none !important;
-  color: gray !important;
+  color: grey !important;
   transition: 0.5s !important;
   height: auto;
   width: auto;
@@ -143,7 +227,7 @@ a {
 }
 
 body {
-  background-color: rgba(153, 161, 132, 0.664) !important;
+  background-color: #99A184 !important;
 }
 
 ::-webkit-scrollbar {
@@ -166,7 +250,7 @@ body {
 main section .letras {
   display: inline-block;
   margin-left: 5rem;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: "Arial", "Helvetica" !important;
 }
 main section .letras p {
   display: flex;
@@ -185,23 +269,12 @@ main section .letras span {
   font-size: 1rem;
   color: black;
 }
-main section .letras a {
-  display: block;
-  text-align: center;
-  margin-top: 5px;
-  width: 9rem;
-  background-color: rgb(60, 255, 0);
-  color: black;
-  text-decoration: none;
-  padding: 15px;
-  border-radius: 5px;
-}
 
 main .section-index {
   display: flex;
   height: 90.6vh;
-  align-items: center;
   justify-content: left;
+  align-items: center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/fondo.jpg);
   background-size: cover;
   background-position: center;
@@ -209,7 +282,7 @@ main .section-index {
 main .section-index .letras-index {
   display: inline-block;
   margin-left: 5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica";
   color: black;
   overflow: hidden;
 }
@@ -226,7 +299,6 @@ main .section-index .letras-index span {
 }
 main .section-index .letras-index a {
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
   color: black;
   font-size: 1.1rem;
   text-align: center;
@@ -242,7 +314,8 @@ main .section-index .letras-index a:hover {
   background-color: rgb(78, 161, 53);
 }
 
-main .section-menu {
+main .section-menu, main .main-nosotros, main .section-sucursales, main .section-delivery,
+main .mapas-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,7 +335,7 @@ main .cards-section .card {
   background-color: #e3cff3;
   border: 1px solid black;
   border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: "Arial", "Helvetica" !important;
   transition: 0.5s;
   overflow: hidden;
 }
@@ -270,13 +343,6 @@ main .cards-section .card:hover {
   box-shadow: 0px 0px 50px rgb(0, 0, 0);
 }
 
-main .section-delivery,
-.mapas-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 35px;
-}
 main .section-delivery .mapas-contenedor,
 .mapas-section .mapas-contenedor {
   width: 700px;
@@ -300,13 +366,6 @@ main .section-delivery .mapas-contenedor .mapa-delivery iframe,
   height: 100%;
 }
 
-main .section-sucursales,
-.mapas-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 35px;
-}
 main .section-sucursales .mapas-contenedor,
 .mapas-section .mapas-contenedor {
   display: flex;
@@ -317,15 +376,23 @@ main .section-sucursales .mapas-contenedor .mapa1-contenedor,
 .mapas-section .mapas-contenedor .mapa1-contenedor {
   width: 700px;
 }
-main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa1,
-.mapas-section .mapas-contenedor .mapa1-contenedor .mapa1 {
+main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa1, main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa2-contenedor .mapa2, main .section-sucursales .mapas-contenedor .mapa2-contenedor .mapa1-contenedor .mapa2,
+.mapas-section .mapas-contenedor .mapa1-contenedor .mapa1,
+.mapas-section .mapas-contenedor .mapa1-contenedor .mapa2-contenedor .mapa2,
+.mapas-section .mapas-contenedor .mapa2-contenedor .mapa1-contenedor .mapa2 {
   position: relative;
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
 }
-main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa1 iframe,
-.mapas-section .mapas-contenedor .mapa1-contenedor .mapa1 iframe {
+main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa1 .iframe, main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa1 .mapa2-contenedor .mapa2, main .section-sucursales .mapas-contenedor .mapa2-contenedor .mapa1-contenedor .mapa1 .mapa2, main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa2-contenedor .mapa2 .iframe, main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa2-contenedor .mapa2 .mapa2, main .section-sucursales .mapas-contenedor .mapa2-contenedor .mapa1-contenedor .mapa2 .iframe, main .section-sucursales .mapas-contenedor .mapa2-contenedor .mapa1-contenedor .mapa2 .mapa2,
+.mapas-section .mapas-contenedor .mapa1-contenedor .mapa1 .iframe,
+.mapas-section .mapas-contenedor .mapa1-contenedor .mapa1 .mapa2-contenedor .mapa2,
+.mapas-section .mapas-contenedor .mapa2-contenedor .mapa1-contenedor .mapa1 .mapa2,
+.mapas-section .mapas-contenedor .mapa1-contenedor .mapa2-contenedor .mapa2 .iframe,
+.mapas-section .mapas-contenedor .mapa1-contenedor .mapa2-contenedor .mapa2 .mapa2,
+.mapas-section .mapas-contenedor .mapa2-contenedor .mapa1-contenedor .mapa2 .iframe,
+.mapas-section .mapas-contenedor .mapa2-contenedor .mapa1-contenedor .mapa2 .mapa2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -338,28 +405,8 @@ main .section-sucursales .mapas-contenedor .mapa2-contenedor,
 .mapas-section .mapas-contenedor .mapa2-contenedor {
   width: 700px;
 }
-main .section-sucursales .mapas-contenedor .mapa2-contenedor .mapa2,
-.mapas-section .mapas-contenedor .mapa2-contenedor .mapa2 {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%;
-}
-main .section-sucursales .mapas-contenedor .mapa2-contenedor .mapa2 iframe,
-.mapas-section .mapas-contenedor .mapa2-contenedor .mapa2 iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .main-nosotros {
-  display: grid;
   text-align: center;
-  padding: 25px;
 }
 .main-nosotros h1 {
   overflow: hidden;
@@ -368,7 +415,7 @@ main .section-sucursales .mapas-contenedor .mapa2-contenedor .mapa2 iframe,
 .main-nosotros .apartado1,
 .main-nosotros .apartado2 {
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica";
   gap: 250px;
 }
 .main-nosotros .apartado1 img,
