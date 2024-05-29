@@ -5,15 +5,16 @@ main .section-sucursales,
   align-items: center;
   padding: 35px;
   .mapas-contenedor {
-    display: grid;
+    display: flex;
+    gap: 10px;
+    width: 100%;
     .mapa1-contenedor {
-      width: 600px;
+      width: 700px;
       .mapa1 {
         position: relative;
         overflow: hidden;
         width: 100%;
         padding-top: 56.25%;
-        margin-left: 50px;
         iframe {
           position: absolute;
           top: 0;
@@ -26,7 +27,8 @@ main .section-sucursales,
       }
     }
     .mapa2-contenedor {
-      width: 600px;
+      width: 700px;
+
       .mapa2 {
         position: relative;
         overflow: hidden;

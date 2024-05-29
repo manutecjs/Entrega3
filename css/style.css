@@ -211,6 +211,7 @@ main .section-index .letras-index {
   margin-left: 5rem;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
+  overflow: hidden;
 }
 main .section-index .letras-index p {
   font-size: 1rem;
@@ -279,6 +280,7 @@ main .section-delivery,
 main .section-delivery .mapas-contenedor,
 .mapas-section .mapas-contenedor {
   width: 700px;
+  border: 2px solid black;
 }
 main .section-delivery .mapas-contenedor .mapa-delivery,
 .mapas-section .mapas-contenedor .mapa-delivery {
@@ -307,11 +309,13 @@ main .section-sucursales,
 }
 main .section-sucursales .mapas-contenedor,
 .mapas-section .mapas-contenedor {
-  display: grid;
+  display: flex;
+  gap: 10px;
+  width: 100%;
 }
 main .section-sucursales .mapas-contenedor .mapa1-contenedor,
 .mapas-section .mapas-contenedor .mapa1-contenedor {
-  width: 600px;
+  width: 700px;
 }
 main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa1,
 .mapas-section .mapas-contenedor .mapa1-contenedor .mapa1 {
@@ -319,7 +323,6 @@ main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa1,
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
-  margin-left: 50px;
 }
 main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa1 iframe,
 .mapas-section .mapas-contenedor .mapa1-contenedor .mapa1 iframe {
@@ -333,7 +336,7 @@ main .section-sucursales .mapas-contenedor .mapa1-contenedor .mapa1 iframe,
 }
 main .section-sucursales .mapas-contenedor .mapa2-contenedor,
 .mapas-section .mapas-contenedor .mapa2-contenedor {
-  width: 600px;
+  width: 700px;
 }
 main .section-sucursales .mapas-contenedor .mapa2-contenedor .mapa2,
 .mapas-section .mapas-contenedor .mapa2-contenedor .mapa2 {
@@ -351,6 +354,36 @@ main .section-sucursales .mapas-contenedor .mapa2-contenedor .mapa2 iframe,
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+.main-nosotros {
+  display: grid;
+  text-align: center;
+  padding: 25px;
+}
+.main-nosotros h1 {
+  overflow: hidden;
+  font-style: italic;
+}
+.main-nosotros .apartado1,
+.main-nosotros .apartado2 {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 250px;
+}
+.main-nosotros .apartado1 img,
+.main-nosotros .apartado2 img {
+  width: 100%;
+  padding: 15px;
+}
+.main-nosotros .apartado1 .texto-apartado2,
+.main-nosotros .apartado2 .texto-apartado2 {
+  margin-right: 10px;
+}
+.main-nosotros .apartado1 .texto-apartado2 p,
+.main-nosotros .apartado2 .texto-apartado2 p {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
